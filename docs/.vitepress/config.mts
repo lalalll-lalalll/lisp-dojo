@@ -6,7 +6,7 @@ export default defineConfig({
   // 将 content 目录设为文档根目录
   srcDir: "content",
 
-  base: "/",
+  base: "/lisp-dojo/",
   
   // 1. 配置多语言
   locales: {
