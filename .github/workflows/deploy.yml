@@ -38,6 +38,10 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true # 确保 Pages 功能已启用
+          # 对于用户/组织站点，需要指定仓库名
+          repository: lisp-dojo/lisp-dojo 
 
       - name: Install dependencies
         run: npm ci # 使用 ci 而非 install，确保依赖版本严格一致
